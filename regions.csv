@@ -1,0 +1,173 @@
+Region,Country,A_Country,A_Region,B_Country
+ASIA,Afghanistan,Other.Far.East,Far.East,Afghanistan*
+CEB,Albania,Other.Eastern.Europe,Eastern.Europe,Albania
+MIDDLE EAST & NORTH AFRICA,Algeria,Middle.East,Middle.East,Algeria
+WESTERN EUROPE,Andorra,Other.Western.Europe,Western.Europe,Andorra
+SUB-SAHARAN AFRICA,Angola,Other.Africa,Africa,Angola
+LATIN AMERICA,Antigua and Barbuda,Other.Latin.America,Latin.America,Antigua & Barbuda
+LATIN AMERICA,Argentina,Argentina,Latin.America,Argentina
+CIS,Armenia,Other.Eastern.Europe,Eastern.Europe,Armenia
+LATIN AMERICA,Aruba,Other.Latin.America,Latin.America,Aruba
+OCEANIA,Australia,Oceania,Oceania,Australia
+WESTERN EUROPE,Austria,Other.Western.Europe,Western.Europe,Austria
+CIS,Azerbaijan,Other.Eastern.Europe,Eastern.Europe,Azerbaijan
+LATIN AMERICA,Bahamas,Other.Latin.America,Latin.America,Bahamas
+MIDDLE EAST & NORTH AFRICA,Bahrain,Middle.East,Middle.East,Bahrain
+ASIA,Bangladesh,Other.Far.East,Far.East,Bangladesh*
+LATIN AMERICA,Barbados,Other.Latin.America,Latin.America,Barbados
+CIS,Belarus,Other.Eastern.Europe,Eastern.Europe,Belarus
+WESTERN EUROPE,Belgium,Other.Western.Europe,Western.Europe,Belgium
+LATIN AMERICA,Belize,Other.Latin.America,Latin.America,Belize
+SUB-SAHARAN AFRICA,Benin,Other.Africa,Africa,Benin
+LATIN AMERICA,Bermuda,Other.Latin.America,Latin.America,Bermuda
+ASIA,Bhutan,Other.Far.East,Far.East,Bhutan
+LATIN AMERICA,Bolivia,Other.Latin.America,Latin.America,Bolivia
+CEB,Bosnia and Herzegovina,Other.Eastern.Europe,Eastern.Europe,Bosnia
+SUB-SAHARAN AFRICA,Botswana,Other.Africa,Africa,Botswana
+LATIN AMERICA,Brazil,Brazil,Latin.America,Brazil
+MIDDLE EAST & NORTH AFRICA,Brunei Darussalam,Middle.East,Middle.East,Brunei
+CEB,Bulgaria,Other.Eastern.Europe,Eastern.Europe,Bulgaria
+SUB-SAHARAN AFRICA,Burkina Faso,Other.Africa,Africa,Burkina Faso
+ASIA,Burma,Other.Far.East,Far.East,Myanmar (Burma)
+SUB-SAHARAN AFRICA,Burundi,Other.Africa,Africa,Burundi
+ASIA,Cambodia,Other.Far.East,Far.East,Cambodia
+SUB-SAHARAN AFRICA,Cameroon,Other.Africa,Africa,Cameroon*
+NORTH AMERICA,Canada,Canada,North.America,Canada
+SUB-SAHARAN AFRICA,Cape Verde,Other.Africa,Africa,Cape Verde
+LATIN AMERICA,Cayman Islands,Other.Latin.America,Latin.America,Cayman Islands
+SUB-SAHARAN AFRICA,Central African Republic,Other.Africa,Africa,Central African Republic
+SUB-SAHARAN AFRICA,Chad,Other.Africa,Africa,Chad
+LATIN AMERICA,Chile,Chile,Latin.America,Chile
+ASIA,China,China,Far.East,China
+LATIN AMERICA,Colombia,Other.Latin.America,Latin.America,Colombia
+LATIN AMERICA,Costa Rica,Other.Latin.America,Latin.America,Costa Rica
+SUB-SAHARAN AFRICA,Cote d'Ivoire,Other.Africa,Africa,Cote d'Ivoire
+CEB,Croatia,Other.Eastern.Europe,Eastern.Europe,Croatia
+LATIN AMERICA,Cuba,Other.Latin.America,Latin.America,Cuba
+WESTERN EUROPE,Cyprus,Other.Western.Europe,Western.Europe,Cyprus
+CEB,Czech Republic,Other.Eastern.Europe,Eastern.Europe,Czech Republic
+SUB-SAHARAN AFRICA,Democratic Republic of the Congo,Other.Africa,Africa,Democratic Republic of Congo
+WESTERN EUROPE,Denmark,Other.Western.Europe,Western.Europe,Denmark
+SUB-SAHARAN AFRICA,Djibouti,Other.Africa,Africa,Djibouti
+LATIN AMERICA,Dominican Republic,Other.Latin.America,Latin.America,Dominican Republic
+LATIN AMERICA,Ecuador,Other.Latin.America,Latin.America,Ecuador
+MIDDLE EAST & NORTH AFRICA,Egypt,Middle.East,Middle.East,Egypt*
+LATIN AMERICA,El Salvador,Other.Latin.America,Latin.America,El Salvador
+SUB-SAHARAN AFRICA,Equatorial Guinea,Other.Africa,Africa,Equatorial Guinea
+SUB-SAHARAN AFRICA,Eritrea,Other.Africa,Africa,Eritrea
+CEB,Estonia,Other.Eastern.Europe,Eastern.Europe,Estonia
+SUB-SAHARAN AFRICA,Ethiopia,Other.Africa,Africa,Ethiopia*
+ASIA,Fiji,Other.Far.East,Far.East,Fiji
+WESTERN EUROPE,Finland,Other.Western.Europe,Western.Europe,Finland
+WESTERN EUROPE,France,France,Western.Europe,France
+LATIN AMERICA,French Guiana,Other.Latin.America,Latin.America,French Guiana
+SUB-SAHARAN AFRICA,Gabon,Other.Africa,Africa,Gabon
+CEB,Georgia,Other.Eastern.Europe,Eastern.Europe,Georgia
+WESTERN EUROPE,Germany,Germany,Western.Europe,Germany
+SUB-SAHARAN AFRICA,Ghana,Other.Africa,Africa,Ghana
+WESTERN EUROPE,Greece,Other.Western.Europe,Western.Europe,Greece
+ASIA,Guam,Other.Far.East,Far.East,Guam
+LATIN AMERICA,Guatemala,Other.Latin.America,Latin.America,Guatemala
+SUB-SAHARAN AFRICA,Guinea,Other.Africa,Africa,Guinea
+LATIN AMERICA,Guyana,Other.Latin.America,Latin.America,Guyana
+LATIN AMERICA,Haiti,Other.Latin.America,Latin.America,Haiti*
+LATIN AMERICA,Honduras,Other.Latin.America,Latin.America,Honduras
+ASIA,Hong Kong,Hong.Kong,Far.East,Hong Kong
+CEB,Hungary,Other.Eastern.Europe,Eastern.Europe,Hungary
+WESTERN EUROPE,Iceland,Other.Western.Europe,Western.Europe,Iceland
+ASIA,India,India,Far.East,India*
+ASIA,Indonesia,Indonesia,Far.East,Indonesia
+MIDDLE EAST & NORTH AFRICA,Iran (Islamic Republic of),Middle.East,Middle.East,Iran*
+MIDDLE EAST & NORTH AFRICA,Iraq,Middle.East,Middle.East,Iraq
+WESTERN EUROPE,Ireland,Other.Western.Europe,Western.Europe,Ireland
+MIDDLE EAST & NORTH AFRICA,Israel,Middle.East,Middle.East,Israel
+WESTERN EUROPE,Italy,Italy,Western.Europe,Italy
+LATIN AMERICA,Jamaica,Other.Latin.America,Latin.America,Jamaica
+ASIA,Japan,Japan,Far.East,Japan
+MIDDLE EAST & NORTH AFRICA,Jordan,Middle.East,Middle.East,Jordan
+CIS,Kazakhstan,Other.Eastern.Europe,Eastern.Europe,Kazakhstan
+SUB-SAHARAN AFRICA,Kenya,Other.Africa,Africa,Kenya*
+ASIA,"Korea, Democratic People's Republic of",South.Korea,Far.East,South Korea
+ASIA,"Korea, Republic of",Other.Far.East,Far.East,North Korea
+MIDDLE EAST & NORTH AFRICA,Kuwait,Middle.East,Middle.East,Kuwait
+CIS,Kyrgyzstan,Other.Eastern.Europe,Eastern.Europe,Kyrgyzstan
+CEB,Latvia,Other.Eastern.Europe,Eastern.Europe,Latvia
+MIDDLE EAST & NORTH AFRICA,Lebanon,Middle.East,Middle.East,Lebanon
+SUB-SAHARAN AFRICA,Liberia,Other.Africa,Africa,Liberia
+MIDDLE EAST & NORTH AFRICA,Libyan Arab Jamahiriya,Middle.East,Middle.East,Libya
+WESTERN EUROPE,Liechtenstein,Other.Western.Europe,Western.Europe,Liechtenstein
+CEB,Lithuania,Other.Eastern.Europe,Eastern.Europe,Lithuania
+WESTERN EUROPE,Luxembourg,Other.Western.Europe,Western.Europe,Luxembourg
+ASIA,Macau,Other.Far.East,Far.East,Macau
+SUB-SAHARAN AFRICA,Madagascar,Other.Africa,Africa,Madagascar
+SUB-SAHARAN AFRICA,Malawi,Other.Africa,Africa,Malawi*
+ASIA,Malaysia,Malaysia,Far.East,Malaysia
+ASIA,Maldives,Other.Far.East,Far.East,Maldives
+SUB-SAHARAN AFRICA,Mali,Other.Africa,Africa,Mali
+WESTERN EUROPE,Malta,Other.Western.Europe,Western.Europe,Malta
+LATIN AMERICA,Martinique,Other.Latin.America,Latin.America,Martinique
+MIDDLE EAST & NORTH AFRICA,Mauritania,Middle.East,Middle.East,Mauritania
+SUB-SAHARAN AFRICA,Mauritius,Other.Africa,Africa,Mauritius
+MEXICO,Mexico,Mexico,Latin.America,Mexico
+ASIA,Mongolia,Other.Far.East,Far.East,Mongolia
+CEB,Montenegro,Other.Eastern.Europe,Eastern.Europe,Montenegro
+MIDDLE EAST & NORTH AFRICA,Morocco,Middle.East,Middle.East,Morocco
+SUB-SAHARAN AFRICA,Mozambique,Other.Africa,Africa,Mozambique
+SUB-SAHARAN AFRICA,Namibia,Other.Africa,Africa,Namibia
+ASIA,Nepal,Other.Far.East,Far.East,Nepal*
+WESTERN EUROPE,Netherlands,Other.Western.Europe,Western.Europe,Netherlands
+ASIA,New Zealand,Other.Far.East,Far.East,New Zealand
+LATIN AMERICA,Nicaragua,Other.Latin.America,Latin.America,Nicaragua
+SUB-SAHARAN AFRICA,Niger,Other.Africa,Africa,Niger
+SUB-SAHARAN AFRICA,Nigeria,Other.Africa,Africa,Nigeria
+WESTERN EUROPE,Norway,Other.Western.Europe,Western.Europe,Norway
+MIDDLE EAST & NORTH AFRICA,Oman,Middle.East,Middle.East,Oman
+ASIA,Pakistan,Pakistan,Far.East,Pakistan*
+LATIN AMERICA,Panama,Other.Latin.America,Latin.America,Panama
+ASIA,Papua New Guinea,Other.Far.East,Far.East,Papua New Guinea
+LATIN AMERICA,Paraguay,Other.Latin.America,Latin.America,Paraguay
+LATIN AMERICA,Peru,Other.Latin.America,Latin.America,Peru
+ASIA,Philippines,Philippines,Far.East,Philippines
+CEB,Poland,Other.Eastern.Europe,Eastern.Europe,Poland
+WESTERN EUROPE,Portugal,Other.Western.Europe,Western.Europe,Portugal
+LATIN AMERICA,Puerto Rico,Other.Latin.America,Latin.America,Puerto Rico*
+MIDDLE EAST & NORTH AFRICA,Qatar,Middle.East,Middle.East,Qatar
+SUB-SAHARAN AFRICA,Reunion,Other.Africa,Africa,Reunion
+CEB,Romania,Other.Eastern.Europe,Eastern.Europe,Romania
+CIS,Russia,Other.Eastern.Europe,Eastern.Europe,Russia
+SUB-SAHARAN AFRICA,Rwanda,Other.Africa,Africa,Rwanda
+MIDDLE EAST & NORTH AFRICA,Saudi Arabia,Middle.East,Middle.East,Saudi Arabia
+SUB-SAHARAN AFRICA,Senegal,Other.Africa,Africa,Senegal
+CEB,Serbia,Other.Eastern.Europe,Eastern.Europe,Serbia
+SUB-SAHARAN AFRICA,Seychelles,Other.Africa,Africa,Seychelles
+SUB-SAHARAN AFRICA,Sierra Leone,Other.Africa,Africa,Sierra Leone
+ASIA,Singapore,Singapore,Far.East,Singapore
+CEB,Slovakia,Other.Eastern.Europe,Eastern.Europe,Slovakia
+CEB,Slovenia,Other.Eastern.Europe,Eastern.Europe,Slovenia
+SUB-SAHARAN AFRICA,South Africa,South.Africa,Africa,South Africa*
+WESTERN EUROPE,Spain,Other.Western.Europe,Western.Europe,Spain
+ASIA,Sri Lanka,Other.Far.East,Far.East,Sri Lanka
+MIDDLE EAST & NORTH AFRICA,Sudan,Middle.East,Middle.East,Sudan
+LATIN AMERICA,Suriname,Other.Latin.America,Latin.America,Suriname
+SUB-SAHARAN AFRICA,Swaziland,Other.Africa,Africa,Swaziland*
+WESTERN EUROPE,Sweden,Other.Western.Europe,Western.Europe,Sweden
+WESTERN EUROPE,Switzerland,Other.Western.Europe,Western.Europe,Switzerland
+ASIA,Taiwan,Taiwan,Far.East,Taiwan
+CIS,Tajikistan,Other.Eastern.Europe,Eastern.Europe,Tajikistan
+ASIA,Thailand,Thailand,Far.East,Thailand
+SUB-SAHARAN AFRICA,Togo,Other.Africa,Africa,Togo
+MIDDLE EAST & NORTH AFRICA,Tunisia,Middle.East,Middle.East,Tunisia
+CEB,Turkey,Other.Eastern.Europe,Eastern.Europe,Turkey
+CIS,Turkmenistan,Other.Eastern.Europe,Eastern.Europe,Turkmenistan
+SUB-SAHARAN AFRICA,Uganda,Other.Africa,Africa,Uganda*
+CIS,Ukraine,Other.Eastern.Europe,Eastern.Europe,Ukraine
+WESTERN EUROPE,United Kingdom,United.Kingdom,Western.Europe,United Kingdom
+NORTH AMERICA,United States,United.States,North.America,United States
+LATIN AMERICA,United States Virgin Islands,Other.Latin.America,Latin.America,Virgin Islands (U.S.)
+LATIN AMERICA,Uruguay,Other.Latin.America,Latin.America,Uruguay
+CIS,Uzbekistan,Other.Eastern.Europe,Eastern.Europe,Uzbekistan
+LATIN AMERICA,Venezuela,Other.Latin.America,Latin.America,Venezuela
+ASIA,Viet Nam,Other.Far.East,Far.East,Vietnam
+MIDDLE EAST & NORTH AFRICA,Yemen,Middle.East,Middle.East,Yemen
+SUB-SAHARAN AFRICA,Zambia,Other.Africa,Africa,Zambia
+SUB-SAHARAN AFRICA,Zimbabwe,Other.Africa,Africa,Zimbabwe
