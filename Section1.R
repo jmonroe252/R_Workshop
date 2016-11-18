@@ -43,6 +43,18 @@ s = c("aa","bb","cc")
 b = c(TRUE,FALSE,TRUE)
 df = data.frame(n,s,b)
 
+#Summary
+#Create a vector
+d <- (1:20)
+d2 <- summary(d)
+d3 <- mean(d)
+d4 <- median(d)
+d5 <- d3==d4
+d6 <- as.data.frame(d)
+d6$New <- d6$d/2
+names(d6)[names(d6)=="d"] <- "Column1"
+names(d6)[names(d6)=="New"] <- "Column2"
+
 #Review
 q1 <- c(.295,.300,.250,.287,.215)
 q2 <- mean(q1)
@@ -77,104 +89,73 @@ lm(y ~ x, mydata, 1:100, model = FALSE)
 
 args(paste) 
 function (..., sep = " ", collapse = NULL) 
-paste("a", "b", sep = ":") [
-
-paste("a", "b", se = ":") 
-
-#Defining a function
-f <- function(a, b = 1, c = 2, d = NULL) { 
-} 
-
-#Lazy Evaluation
-f <- function(a, b) { 
-  a^2 
-} 
-
-f <- function(a, b) { 
-  print(a) 
-  print(b) } 
-f(45) 
-
-#Arguments after '...'
-args(paste) 
-function (..., sep = " ", collapse = NULL) 
-paste("a", "b", sep = ":") 
-paste("a", "b", se = ":") 
-
-
-#Lexical Scoping
-f <- function(x, y) { 
-  x^2 + y / z 
-} 
-
-make.power <- function(n) 
-{ pow <- function(x) { 
-  x^n 
-} 
-pow 
-} 
-
-cube <- make.power(3)
-square <- make.power(2) 
-cube(3) 
-square(3) 
-
-#Exploring a Function Closure
-ls(environment(cube)) 
-get("n", environment(cube)) 
-ls(environment(square)) 
-get("n", environment(square)) 
-
-#Lexical vs. Dynamic Scoping
-
-y <- 10 
-f <- function(x) { 
-  y <- 2 
-  y^2 + g(x) 
-} 
-g <- function(x) { 
-  x * y 
-} 
-
-f(3) 
-
-
-g <- function(x) { 
-  + 	a <- 3 
-  + 	x + a + y 
-  + } 
-
-g(2) 
-
-y <- 3 > g(2) 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  paste("a", "b", sep = ":") [
+    
+    paste("a", "b", se = ":") 
+    
+    #Defining a function
+    f <- function(a, b = 1, c = 2, d = NULL) { 
+    } 
+    
+    #Lazy Evaluation
+    f <- function(a, b) { 
+      a^2 
+    } 
+    
+    f <- function(a, b) { 
+      print(a) 
+      print(b) } 
+    f(45) 
+    
+    #Arguments after '...'
+    args(paste) 
+    function (..., sep = " ", collapse = NULL) 
+      paste("a", "b", sep = ":") 
+    paste("a", "b", se = ":") 
+    
+    
+    #Lexical Scoping
+    f <- function(x, y) { 
+      x^2 + y / z 
+    } 
+    
+    make.power <- function(n) 
+    { pow <- function(x) { 
+      x^n 
+    } 
+    pow 
+    } 
+    
+    cube <- make.power(3)
+    square <- make.power(2) 
+    cube(3) 
+    square(3) 
+    
+    #Exploring a Function Closure
+    ls(environment(cube)) 
+    get("n", environment(cube)) 
+    ls(environment(square)) 
+    get("n", environment(square)) 
+    
+    #Lexical vs. Dynamic Scoping
+    
+    y <- 10 
+    f <- function(x) { 
+      y <- 2 
+      y^2 + g(x) 
+    } 
+    g <- function(x) { 
+      x * y 
+    } 
+    
+    f(3) 
+    
+    
+    g <- function(x) { 
+      + 	a <- 3 
+      + 	x + a + y 
+      + } 
+    
+    g(2) 
+    
+    y <- 3 > g(2) 
