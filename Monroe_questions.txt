@@ -1,0 +1,27 @@
+Monroe Section 1 Review Questions
+1.  Assign a variable x as 5+9
+2.  Assign a variable y as x-3, what is the value of y?
+3.  Create a vector, z, containing the numbers 1.1, 9, and 3.56.
+4.  Create a new vector without assigning a variable containing z, 123, then z again in that order.
+5.  Create a vector of 3 numbers from 1 to 50
+6.  What is the difference between a matrix and an array?
+7.  What is a dataframe primarily used for?
+8.  How can you easily cycle through previous commands?
+9.  Is R case-sensitive?
+10. Name 3 types of Objects in R.
+
+
+Monroe Section 2 Review Questions
+1.  Which function displays the structure of an object?
+2.  Which function combines objects as columns?
+3.  Which function combines objects as rows?
+4.  What is the syntax to read a .csv file?
+5.  What is the syntax to read a .xlsx file, sheet3, beginning with row 4, including column names and skipping empty rows using the openxlsx package?
+6. Create a dataframe from scratch, with A, and B are the column headings, where A contains values 1:3, and B contains "Good", "Bad", "Ugly".
+7.  Rename column A in q6 as "Count".
+8.  Save the result from question 6 as q6 to your desktop.
+9.  Format today's date as Month, Day and Year.
+10. Sort the mtcars dataset by cyl.
+
+
+
