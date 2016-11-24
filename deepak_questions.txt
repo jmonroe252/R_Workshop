@@ -1,0 +1,26 @@
+Does K-NN require labels in the training data?
+
+Is K-NN a good method to use when we have a large number of features?
+
+Consider the following methods to set K to its optimal value, (A) Run K-NN several times with different values of K and choose the one with best performance on the training dataset, (B) Run K-NN several times with different values of K and choose the one with best cross-validation performance. Which of the following is correct:
+(i) Only (A)
+(ii) Only (B)
+(iii) Both (A) and (B)
+
+How can we change the value of K while running K-NN in R?
+
+What method can I use in R to perform 3 fold cross-validation using K-NN?
+
+How many parameters should we learn for a logistic regression classifier when we have d features in the data?
+
+Does the logistic regression classifier in R output
+(a) A class vlaue for each instance
+(b) A probability value for each instance
+
+When does logistic regression work well?
+
+Write a small R script that performs Logistic Regression with a threshold equal to 0.75
+
+In K-Means algorithm, what is K?
+
+In R, how can I change the value of K when calling K-Means?
