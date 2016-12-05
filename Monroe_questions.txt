@@ -16,9 +16,10 @@ Multiple Choice
   d. str()
 
 Open Ended Question (3-5 Minutes each)
-5a. Create a dataframe from scratch, with A, and B are the column headings, where A contains values 1:3, and B contains "Good", "Bad", "Ugly".
-5b. Rename column A in q6 as "Count".
-5c.  Save the result from question 6 as q6 to your desktop.
+5a. Create a dataframe from scratch, with A and B are the column headings, where A contains values 1:3, and B contains "Good", "Bad", "Ugly".
+5b. Rename column A in 5a as "Count".
+5c.  Save the result from question 5b as q5 to your desktop.
+
 
 6. Using the packages quantmod, xts and plyr, extract the last 14 months of the USD/MXN currency, setting the source to oanda.
 
