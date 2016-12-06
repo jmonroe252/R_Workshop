@@ -134,10 +134,8 @@ trade3 <-aggregate(trade2$value, by=list(trade2$Reporting_Region, trade2$Partner
 trade3 <- aggregate(trade2["value"], by=trade2[c("Reporting_Region","Partner_Region", "Segment", "Year")], FUN=sum)
 
 ##Web Scraping:  Extract Data from UN Comtrade
-
 library(rjson)
 library(plyr)
-library(sqldf)
 
 string <- "http://comtrade.un.org/data/cache/partnerAreas.json"
 reporters <- fromJSON(file=string)
