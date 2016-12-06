@@ -207,13 +207,20 @@ get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
 q8 <- get.Comtrade(r='8',p='all',ps='2015,2014',fmt='csv',cc='480255,480256,480257')
 
 ##Webscraping: Wikipedia  
-library(rvest)
-# First, grab the page source
-html("http://en.wikipedia.org/wiki/Table_(information)") %>%
-  # then extract the first node with class of wikitable
-  html_node(".wikitable") %>% 
-  # then convert the HTML table into a data frame
+library("rvest")
+
+#Identify the url
+url <- "http://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population"
+population <- url %>%
+  read_html() %>%
+#Right-click on the page and inspect
+#in the inspect region, hover over the element of interest
+#Right-click and copy xpath
+  html_nodes(xpath='//*[@id="mw-content-text"]/table[1]') %>%
   html_table()
+population <- population[[1]]
+
+
 
 ##Webscraping Yahoo Finance
 require(quantmod)
@@ -222,14 +229,7 @@ require(plyr)
 EUR<-getSymbols('EUR=X',src='yahoo', auto.assign=FALSE)
 CAD<-getSymbols('CAD=X',src='yahoo', auto.assign=FALSE)
 CNY<-getSymbols('CNY=X',src='yahoo', auto.assign=FALSE)
-IDR<-getSymbols('IDR=X',src='yahoo', auto.assign=FALSE)
-BRL<-getSymbols('BRL=X',src='yahoo', auto.assign=FALSE)
-INR<-getSymbols('INR=X',src='yahoo', auto.assign=FALSE)
-THB<-getSymbols('THB=X',src='yahoo', auto.assign=FALSE)
-RUB<-getSymbols('RUB=X',src='yahoo', auto.assign=FALSE)
-AED<-getSymbols('AED=X',src='yahoo', auto.assign=FALSE)
-MXN<-getSymbols('MXN=X',src='yahoo', auto.assign=FALSE)
-AUD<-getSymbols('AUD=X',src='yahoo', auto.assign=FALSE)
+
 
 EUR1<-tail(to.quarterly(EUR), n=243)
 EUR2<-(EUR1$EUR.Close)
@@ -243,51 +243,27 @@ CNY1<-tail(to.quarterly(CNY), n=243)
 CNY2<-(CNY1$CNY.Close)
 CNY3<-data.frame(Date=index(CNY2),coredata(CNY2))
 
-IDR1<-tail(to.quarterly(IDR), n=243)
-IDR2<-(IDR1$IDR.Close)
-IDR3<-data.frame(Date=index(IDR2),coredata(IDR2))
-
-BRL1<-tail(to.quarterly(BRL), n=243)
-BRL2<-(BRL1$BRL.Close)
-BRL3<-data.frame(Date=index(BRL2),coredata(BRL2))
-
-INR1<-tail(to.quarterly(INR), n=243)
-INR2<-(INR1$INR.Close)
-INR3<-data.frame(Date=index(INR2),coredata(INR2))
-
-THB1<-tail(to.quarterly(THB), n=243)
-THB2<-(THB1$THB.Close)
-THB3<-data.frame(Date=index(THB2),coredata(THB2))
-
-RUB1<-tail(to.quarterly(RUB), n=243)
-RUB2<-(RUB1$RUB.Close)
-RUB3<-data.frame(Date=index(RUB2),coredata(RUB2))
-
-AED1<-tail(to.quarterly(AED), n=243)
-AED2<-(AED1$AED.Close)
-AED3<-data.frame(Date=index(AED2),coredata(AED2))
-
-MXN1<-tail(to.quarterly(MXN), n=243)
-MXN2<-(MXN1$MXN.Close)
-MXN3<-data.frame(Date=index(MXN2),coredata(MXN2))
-
-AUD1<-tail(to.quarterly(AUD), n=243)
-AUD2<-(AUD1$AUD.Close)
-AUD3<-data.frame(Date=index(AUD2),coredata(AUD2))
-
 FX0<- merge(EUR3,CAD3,ALL=TRUE)
 FX1<- merge(FX0,CNY3,ALL=TRUE)
-FX2<- merge(FX1,IDR3,ALL=TRUE)
-FX3<- merge(FX2,BRL3,ALL=TRUE)
-FX4<- merge(FX3,INR3,ALL=TRUE)
-FX5<- merge(FX4,THB3,ALL=TRUE)
-FX6<- merge(FX5,RUB3,ALL=TRUE)
-FX7<- merge(FX6,AED3,ALL=TRUE)
-FX8<- merge(FX7,MXN3, ALL=TRUE)
-FX<- merge(FX8,AUD3, ALL=TRUE)
 
-out<-data.frame(rename(FX,c("EUR.Close"="USD/EUR", "CAD.Close"="USD/CAD","CNY.Close"="USD/CNY", "IDR.Close"="USD/IDR", "BRL.Close"="USD/BLR", "INR.Close"="USD/INR","THB.Close"="USD/THB", "RUB.Close"="USD/RUB", "AED.Close"="USD/AED", "MXN.Close"="USD/MXN","AUD.Close"="USD/AUD")))
 
+out<-data.frame(rename(FX1,c("EUR.Close"="USD/EUR", "CAD.Close"="USD/CAD","CNY.Close"="USD/CNY")))
+
+
+##Webscraping:  Diesel Prices
+library(RCurl)
+library(RJSONIO)
+library(plyr)
+library(rjson)
+
+bls.content <- getURL("http://api.bls.gov/publicAPI/v1/timeseries/data/WPU05730302")
+bls.json <- fromJSON(bls.content)
+tmp <-bls.json$Results[[1]][[1]]
+diesel <- data.frame(year=sapply(tmp$data,"[[","year"),
+                     period=sapply(tmp$data,"[[","period"),
+                     periodName=sapply(tmp$data,"[[","periodName"),
+                     value=as.numeric(sapply(tmp$data,"[[","value")), 
+                     stringsAsFactors=FALSE)
 
 ##Webscraping:  Diesel Prices
 library(RCurl)
