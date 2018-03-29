@@ -1,0 +1,108 @@
+###Web SScraping
+##Webscraping: Wikipedia  
+library(XML)
+library(rvest)
+html = read_html("http://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population")
+population = html_table(html_nodes(html, "table")[1], fill=TRUE)
+str(population)
+
+
+
+##Retrieving Exchange Rates
+library(Quandl)
+eu_fx = head(Quandl("FRED/EXUSEU"),8)
+mx_fx = head(Quandl("FRED/DEXMXUS"),8)
+
+
+
+##Webscraping:  Diesel Prices
+library(RCurl)
+library(RJSONIO)
+library(plyr)
+library(rjson)
+
+bls.content <- getURL("https://api.bls.gov/publicAPI/v1/timeseries/data/WPU05730302")
+bls.json <- fromJSON(bls.content)
+tmp <-bls.json$Results[[1]][[1]]
+diesel <- data.frame(year=sapply(tmp$data,"[[","year"),
+                     period=sapply(tmp$data,"[[","period"),
+                     periodName=sapply(tmp$data,"[[","periodName"),
+                     value=as.numeric(sapply(tmp$data,"[[","value")), 
+                     stringsAsFactors=FALSE)
+head(diesel)
+
+
+##Web Scraping:  Extract Data from UN Comtrade
+library(rjson)
+library(plyr)
+
+string <- "http://comtrade.un.org/data/cache/partnerAreas.json"
+reporters <- fromJSON(file=string)
+reporters <- as.data.frame(t(sapply(reporters$results,rbind)))
+
+
+#function
+get.Comtrade <- function(url="http://comtrade.un.org/api/get?"
+                         ,maxrec=50000
+                         ,type="C"
+                         ,freq="A"
+                         ,px="HS"
+                         ,ps="now"
+                         ,r
+                         ,p
+                         ,rg="all"
+                         ,cc="TOTAL"
+                         ,fmt="json"
+                         ,token=""
+)
+{
+  string<- paste(url
+                 ,"max=",maxrec,"&" #maximum no. of records returned
+                 ,"type=",type,"&" #type of trade (c=commodities)
+                 ,"freq=",freq,"&" #frequency
+                 ,"px=",px,"&" #classification
+                 ,"ps=",ps,"&" #time period
+                 ,"r=",r,"&" #reporting area
+                 ,"p=",p,"&" #partner country
+                 ,"rg=",rg,"&" #trade flow
+                 ,"cc=",cc,"&" #classification code
+                 ,"fmt=",fmt        #Format
+                 ,sep = ""
+  )
+  
+  if(fmt == "csv") {
+    raw.data<- read.csv(string,header=TRUE)
+    return(list(validation=NULL, data=raw.data))
+  } else {
+    if(fmt == "json" ) {
+      raw.data<- fromJSON(file=string)
+      data<- raw.data$dataset
+      validation<- unlist(raw.data$validation, recursive=TRUE)
+      ndata<- NULL
+      if(length(data)> 0) {
+        var.names<- names(data[[1]])
+        data<- as.data.frame(t( sapply(data,rbind)))
+        ndata<- NULL
+        for(i in 1:ncol(data)){
+          data[sapply(data[,i],is.null),i]<- NA
+          ndata<- cbind(ndata, unlist(data[,i]))
+        }
+        ndata<- as.data.frame(ndata)
+        colnames(ndata)<- var.names
+      }
+      return(list(validation=validation,data =ndata))
+    }
+  }
+}
+
+##part 2: download specific data
+#information:
+
+#note: we can only download less than five countries and years at a time
+#note: i am sure there is a more elegant/efficient way to do this
+#note: do it line by line, it seems to crash if i try to do it all at once:
+#start downloading:
+
+q8 <- get.Comtrade(r='8',p='all',ps='2015',fmt='csv',cc='480255')
+
+head(q8)
